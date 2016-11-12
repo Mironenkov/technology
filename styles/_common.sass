@@ -3,6 +3,7 @@ body
   font-size: $font-size-base
   color: $color-text-base
   background-color: $bg-base
+  line-height: 1.3
   height: 100%
 a
   text-decoration: none
@@ -17,3 +18,386 @@ input[placeholder]
     color: transparent
   &:focus:-ms-input-placeholder
     color: transparent
+
+.main
+  margin: 0px auto
+  padding: 0px 10px
+  box-sizing: border-box
+  max-width: 1220px
+
+.main_title
+  font-size: 18px
+  font-family: $bold
+  text-transform: uppercase
+  color: $main-color-theme
+
+.btn
+  display: inline-block
+  line-height: 70px
+  padding: 0px 15px
+  box-sizing: border-box
+  text-align: center
+  text-transform: uppercase
+  color: #fff
+  font-size: 20px
+  font-family: $medium
+  background-color: $main-color-theme
+  +box-shadow(0px 0px 10px 0px rgba(255,255,255,0.8))
+  +border-radius(15px)
+  +transition(0.2s linear)
+  &:hover
+    background-color: #fb5521
+    +box-shadow(0px 0px 10px 0px rgba(0,0,0,0.8))
+
+
+//Header
+.header_top
+  background: url("../images/bg_header.jpg") center no-repeat
+  background-size: cover
+.header_top-block
+  padding: 10px 0px 5px
+  +flexbox
+  +flex-wrap(wrap)
+  +justify-content(space-between)
+  +align-items(flex-end)
+.header_top-logo
+  +flexbox
+  +flex-wrap(wrap)
+  +align-items(center)
+.header_top-logo__title
+  margin-left: 50px
+  color: $main-color-theme
+  font-size: 18px
+  font-family: $medium
+  text-transform: uppercase
+.header_top-info
+  font-family: $medium
+  text-align: right
+.header_top-info__address
+  p
+    margin-bottom: 5px
+.header_top-info__phone
+  font-size: 30px
+  +flexbox
+  +flex-direction(column)
+  +align-items(flex-end)
+  p
+    position: relative
+    &:nth-child(odd)::before
+      content: ""
+      display: block
+      width: 28px
+      height: 28px
+      background: url("../images/phone_ico_1.png")
+      position: absolute
+      top: 50%
+      margin-top: -14px
+      left: -38px
+    &:nth-child(even)::before
+      content: ""
+      display: block
+      width: 19px
+      height: 36px
+      background: url("../images/phone_ico_2.png")
+      position: absolute
+      top: 50%
+      margin-top: -18px
+      left: -29px
+.header_top__menu
+  background-color: rgba(0,0,0,0.5)
+.header_top-menu
+  > ul
+    +flexbox
+    +flex-wrap(wrap)
+    > li
+      +flex(1 1 100px) 
+      > a
+        color: #fff
+        font-family: $medium
+        text-transform: uppercase
+        display: block
+        text-align: center
+        line-height: 55px
+        &:hover
+          background-color: $main-color-theme
+
+.header_bot
+  background-color: $bg-theme
+  padding: 30px 0px
+.header_bot-block
+  +flexbox
+  +flex-wrap(wrap)
+  +justify-content(space-around)
+  +align-items(flex-end)
+.header_bot-item
+  display: block
+  text-align: center
+  &:hover
+    .header_bot-item__image
+      background: rgba(83,131,5,0.73)
+      background: -moz-radial-gradient(center, ellipse cover, rgba(83,131,5,0.73) 0%, rgba(185,79,28,0) 69%, rgba(231,56,39,0) 100%)
+      background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(83,131,5,0.73)), color-stop(69%, rgba(185,79,28,0)), color-stop(100%, rgba(231,56,39,0)))
+      background: -webkit-radial-gradient(center, ellipse cover, rgba(83,131,5,0.73) 0%, rgba(185,79,28,0) 69%, rgba(231,56,39,0) 100%)
+      background: -o-radial-gradient(center, ellipse cover, rgba(83,131,5,0.73) 0%, rgba(185,79,28,0) 69%, rgba(231,56,39,0) 100%)
+      background: -ms-radial-gradient(center, ellipse cover, rgba(83,131,5,0.73) 0%, rgba(185,79,28,0) 69%, rgba(231,56,39,0) 100%)
+      background: radial-gradient(ellipse at center, rgba(83,131,5,0.73) 0%, rgba(185,79,28,0) 69%, rgba(231,56,39,0) 100%)
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#538305', endColorstr='#e73827', GradientType=1 )
+      img
+        +transform(scale(1.1))
+    .header_bot-item__title
+      color: $main-color-theme
+.header_bot-item__image
+  +transition(0.2s linear)
+  img
+    +transition(0.2s linear)
+.header_bot-item__title
+  color: $color-text-base
+
+//Description
+.tech-description-wrap
+  .lSAction>a
+    width: 86px
+    display: block
+    top: 50%
+    height: 86px
+    background-image: url(../images/controls.png)
+    cursor: pointer
+    position: absolute
+    z-index: 99
+    margin-top: -43px
+    opacity: 1
+  .lSAction>.lSNext
+    background-position: -86px 0px
+.tech-description-slide
+  height: 400px
+  position: relative
+  img
+    display: block
+    height: 100%
+    width: 100%
+.tech-description-slide__title
+  height: 55%
+  width: 100%
+  position: absolute
+  left: 0px
+  bottom: 0px
+  background-color: rgba(0,0,0,0.5)
+  +flexbox
+  +justify-content(center)
+  +align-items(center)
+.tech-description-title
+  font-size: 48px
+  font-family: $bold
+  color: #fff
+  text-transform: uppercase
+  border-left: 24px solid $main-color-theme
+  padding-left: 10px
+
+//Description
+.tech-projects
+  padding: 30px 0px 0px
+.tech-projects__link
+  margin-bottom: 20px
+  text-align: right
+  a
+    color: $main-color-theme
+    border-bottom: 1px solid $main-color-theme
+    &:hover
+      border-bottom: none
+.tech-projects-wrap
+  +flexbox
+  +flex-wrap(wrap)
+  +justify-content(space-between)
+.tech-projects-wrap__item
+  margin-bottom: 6%
+.tech-projects-card
+  display: block
+  max-width: 340px
+  min-width: 300px
+  box-sizing: border-box
+  +box-shadow(0px 0px 8px 0px rgba(0,0,0,0.75))
+  &:hover
+    +box-shadow(0px 0px 2px 1px rgba(0,0,0,0.75))
+    .tech-projects-card__title
+      color: $main-color-theme
+    .tech-projects-card__info
+      background-color: $bg-base
+.tech-projects-card__image
+  height: 270px
+  overflow: hidden
+  img
+    display: block
+    height: 100%
+.tech-projects-card__info
+  padding: 20px 10px
+  background-color: $bg-theme
+  text-align: center
+  color: $color-text-base
+.tech-projects-card__title
+  margin-bottom: 10px
+  text-decoration: underline
+.tech-projects-card__text
+  font-size: 14px
+  margin-bottom: 10px
+.tech-projects-card__price
+  font-size: 14px
+
+//Calculate
+.tech-calculate
+  padding: 40px 0px 
+  background: url("../images/bg_calculate.jpg") center no-repeat
+  background-size: cover
+.tech-calculate-wrap
+  text-align: center
+.tech-calculate-wrap__link
+  position: relative
+  &::before
+    content: ""
+    display: block
+    width: 276px
+    height: 230px
+    background: url("../images/calculate_img_1.png")
+    position: absolute
+    top: 50%
+    margin-top: -115px
+    left: -120%
+  &::after
+    content: ""
+    display: block
+    width: 288px
+    height: 248px
+    background: url("../images/calculate_img_2.png")
+    position: absolute
+    top: 50%
+    margin-top: -124px
+    right: -120%
+
+//Advantages
+.tech-advantages
+  padding: 60px 0px
+  background-color: $bg-theme
+.tech-advantages__title
+  margin-bottom: 30px
+.tech-advantages-wrap
+  +flexbox
+  +flex-wrap(wrap)
+  +justify-content(space-between)
+.tech-advantages-wrap__item
+  margin: 0px 20px
+  +flex(1 1 500px)
+.tech-advantages-item-top
+  +flexbox
+  +flex-wrap(wrap)
+  +align-items(center)
+.tech-advantages-item-top__number
+  font-size: 110px
+  font-family: "Cambria"
+  color: $main-color-theme
+.tech-advantages-item-top__title
+  margin-left: 6%
+  font-size: 18px
+  font-family: $medium
+  max-width: 320px
+.tech-advantages-item__text
+  font-family: $medium
+  font-size: 14px
+  text-align: justify
+.tech-advantages-text
+  color: $main-color-theme
+
+//Text
+.tech-text
+  background: url("../images/bg_text.jpg") center no-repeat
+  background-size: cover
+  .main
+    background-color: rgba(0,0,0,0.3)
+    padding: 60px 10px
+  h2
+    margin-bottom: 10px
+    font-family: $medium
+    font-size: 18px
+    color: #fff
+  p
+    text-align: justify
+    margin-bottom: 10px
+    color: #fff
+.tech-text__title
+  margin-bottom: 30px
+
+//Footer
+.footer
+  padding: 20px 0px 60px
+.footer-block
+  +flexbox
+  +flex-wrap(wrap)
+.footer-block__logo
+  +flex(1 1 60px)
+.footer-block__wrap
+  +flex(5 1 300px)
+.footer-wrap__menu
+  margin-bottom: 6%
+.footer-menu
+  > ul
+    +flexbox
+    +flex-wrap(wrap)
+    > li
+      text-align: center
+      +flex(1 1 100px)
+      > a
+        color: $color-text-base
+        text-transform: uppercase
+        font-family: $medium
+        border-bottom: 1px solid $color-text-base
+        &:hover
+          border-bottom: none
+.footer-info
+  +flexbox
+  +flex-wrap(wrap)
+  +justify-content(space-between)
+  +align-items(flex-end)
+
+.footer-info__title
+  font-size: 14px
+  font-family: $medium
+.footer-dogovor
+  color: $color-text-base
+  position: relative
+  font-size: 14px
+  border-bottom: 1px solid #333
+  &::before
+    content: ""
+    display: block
+    width: 52px
+    height: 65px
+    background: url("../images/dogovor.png")
+    position: absolute
+    left: 50%
+    margin-left: -26px
+    top: -65px
+  &:hover
+    border-bottom: none
+.footer-info__phone
+  font-size: 14px
+  p
+    margin-bottom: 10px
+    position: relative
+    &:nth-child(odd)::before
+        content: ""
+        display: block
+        width: 17px
+        height: 17px
+        background: url("../images/phone_ico_1_sm.png")
+        position: absolute
+        top: 50%
+        margin-top: -9px
+        left: -22px
+    &:nth-child(even)::before
+      content: ""
+      display: block
+      width: 12px
+      height: 22px
+      background: url("../images/phone_ico_2_sm.png")
+      position: absolute
+      top: 50%
+      margin-top: -11px
+      left: -17px
