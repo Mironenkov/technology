@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Технология</title>
+    <title>Категория</title>
     <meta name="robots" content="noindex">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,30 +86,53 @@
     </header>
     <!-- End header -->
 
-    <!-- Section description -->
-    <section class="content-block tech-description">
-        <div class="tech-description-wrap">
-            <div class="tech-description-slider">
-                <div class="tech-description-slider__slide">
-                    <div class="tech-description-slide">
-                        <img src="images/slider_img.jpg" alt="">
-                        <div class="tech-description-slide__title">
-                            <div class="tech-description-title">строительство<br>каркасных и брусовых домов<br>под ключ</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tech-description-slider__slide">
-                    <div class="tech-description-slide">
-                        <img src="images/slider_img.jpg" alt="">
-                        <div class="tech-description-slide__title">
-                            <div class="tech-description-title">строительство<br>каркасных и брусовых домов<br>под ключ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Section bread_crumb -->
+    <section class="content-block tech-bread_crumb">
+        <div class="main">
+            <div class="dm-bread-crumb-block"><a href="#" class="dm-bread-crumb__link">Главная</a><span class="dm-bread-crumb__arrows"><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-angle-right" aria-hidden="true"></i></span>Проекты</div>
         </div>
     </section>
-    <!-- End section description -->
+    <!-- End section bread_crumb -->
+
+    <!-- Section filter -->
+    <section class="content-block tech-filter">
+        <div class="main">
+            <div class="tech-filter__title main_title">Фильтр</div>
+            <form action="">
+                <div class="tech-filter-wrap">
+                    <div class="tech-filter-block">
+                        <div class="tech-filter-block__item">
+                            <ul class="tech-filter-item">
+                                <li><input id="size_0" name="size" value="all" type="radio" checked/><label for="size_0">Все</label></li>
+                                <li><input id="size_1" name="size" value="6 x 6" type="radio"/><label for="size_1">6 x 6</label></li>
+                                <li><input id="size_2" name="size" value="8 x 6" type="radio"/><label for="size_2">8 x 6</label></li>
+                                <li><input id="size_3" name="size" value="9 x 6" type="radio"/><label for="size_3">9 x 6</label></li>
+                                <li><input id="size_4" name="size" value="9 x 7" type="radio"/><label for="size_4">9 x 7</label></li>
+                            </ul>
+                        </div>
+                        <div class="tech-filter-block__item">
+                            <ul class="tech-filter-item">
+                                <li><input id="square_0" name="square" value="all" type="radio" checked/><label for="square_0">Все</label></li>
+                                <li><input id="square_1" name="square" value="-100" type="radio"/><label for="square_1">до 100м<sup>2</sup></label></li>
+                                <li><input id="square_2" name="square" value="100-200" type="radio"/><label for="square_2">100-200м<sup>2</sup></label></li>
+                                <li><input id="square_3" name="square" value="200-300" type="radio"/><label for="square_3">200м-300м<sup>2</sup></label></li>
+                                <li><input id="square_4" name="square" value="300-" type="radio"/><label for="square_4">от 300м<sup>2</sup></label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tech-sorting">
+                        <span class="tech-sorting__caption">Цена</span>
+                        <input type="radio" name="sorting" id="sort-down"/>
+                        <label for="sort-down" class="tech-sorting__label"><i class="fa fa-angle-down" aria-hidden="true"></i></label>
+                        <input type="radio" name="sorting" id="sort-up"/>
+                        <label for="sort-up" class="tech-sorting__label"><i class="fa fa-angle-up" aria-hidden="true"></i></label>
+                    </div>
+                    <div class="tech-filter-button"><input type="submit" value="Фильтровать"/></div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- End section filter -->
 
     <!-- Section projects -->
     <section class="content-block tech-projects">
@@ -189,72 +212,6 @@
         </div>
     </section>
     <!-- End section calculate -->
-
-    <!-- Section advantages -->
-    <section class="content-block tech-advantages">
-        <div class="main">
-            <div class="tech-advantages__title main_title">Наши преимущества</div>
-            <div class="tech-advantages-wrap">
-                <div class="tech-advantages-wrap__item">
-                    <div class="tech-advantages-item">
-                        <div class="tech-advantages-item__top">
-                            <div class="tech-advantages-item-top">
-                                <div class="tech-advantages-item-top__number">1</div>
-                                <div class="tech-advantages-item-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            </div>
-                        </div>
-                        <div class="tech-advantages-item__text"><span class="tech-advantages-text">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim <span class="tech-advantages-text">ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui r</span></div>
-                    </div>
-                </div>
-                <div class="tech-advantages-wrap__item">
-                    <div class="tech-advantages-item">
-                        <div class="tech-advantages-item__top">
-                            <div class="tech-advantages-item-top">
-                                <div class="tech-advantages-item-top__number">2</div>
-                                <div class="tech-advantages-item-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            </div>
-                        </div>
-                        <div class="tech-advantages-item__text"><span class="tech-advantages-text">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim <span class="tech-advantages-text">ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui r</span></div>
-                    </div>
-                </div>
-                <div class="tech-advantages-wrap__item">
-                    <div class="tech-advantages-item">
-                        <div class="tech-advantages-item__top">
-                            <div class="tech-advantages-item-top">
-                                <div class="tech-advantages-item-top__number">3</div>
-                                <div class="tech-advantages-item-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            </div>
-                        </div>
-                        <div class="tech-advantages-item__text"><span class="tech-advantages-text">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim <span class="tech-advantages-text">ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui r</span></div>
-                    </div>
-                </div>
-                <div class="tech-advantages-wrap__item">
-                    <div class="tech-advantages-item">
-                        <div class="tech-advantages-item__top">
-                            <div class="tech-advantages-item-top">
-                                <div class="tech-advantages-item-top__number">4</div>
-                                <div class="tech-advantages-item-top__title">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            </div>
-                        </div>
-                        <div class="tech-advantages-item__text"><span class="tech-advantages-text">Lorem ipsum</span> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim <span class="tech-advantages-text">ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui r</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End section advantages -->
-
-    <!-- Section text -->
-    <section class="content-block tech-text">
-        <div class="main">
-            <div class="tech-text__title main_title">Услуги компании «Технология»</div>
-            <h2>Дом из бруса</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            <h2>Дом из сруба</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-        </div>
-    </section>
-    <!-- End section text -->
 
     <!-- Footer -->
     <footer class="footer">

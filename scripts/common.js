@@ -9,4 +9,34 @@
 		loop: true,
 		slideMargin: 0
 	});
+	$('.tech-card-slider').lightSlider({
+		gallery:true,
+		galleryMargin: 20,
+		thumbMargin: 30,
+		item:1,
+		loop:true,
+		thumbItem:3,
+		slideMargin:0,
+		enableDrag: false,
+		enableTouch: false,
+		responsive : [
+			{
+				breakpoint:800,
+				settings: {
+					thumbMargin: 10
+				}
+			},
+			{
+				breakpoint:480,
+				settings: {
+					thumbMargin: 5
+				}
+			}
+		]
+	});
+
+	//Equipment
+	$('.tech-equipment-table-row--click').click(function(){
+		$(this).next().slideToggle("slow");
+	});
 })();
