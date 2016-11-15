@@ -368,6 +368,10 @@ input[placeholder]
       cursor: pointer
       font-size: 14px
       box-sizing: border-box
+      &:hover
+        background-color: $main-color-theme
+        color: #fff
+        +border-radius(10px)
 .tech-sorting
   margin-top: 15px
   +flexbox
@@ -601,10 +605,79 @@ input[placeholder]
       width: 180px
       background-color: #669900
       color: #fff
+      +transition(0.1s linear)
       &:hover
-        background-color: $main-color-theme
+        background-color: #fb4f1a
 
+//Contacts
+.tech-contacts
+  background: url("../images/bg_contacts.jpg") center no-repeat
+  -webkit-background-size: cover
+  background-size: cover
+  .main
+    background-color: $bg-base
+    padding: 30px 10px
+  .dm-bread-crumb-block, .tech-contacts__title, .tech-contacts-block
+    margin-bottom: 20px
+.tech-contacts-block__row
+  padding: 15px 0px
+  border-bottom: 1px solid #cccccc
+  font-family: $medium
+  &:last-child
+    border-bottom: none
+  h2
+    font-family: $bold
+    color: $main-color-theme
+    font-size: 16px
+    margin-bottom: 10px
+  a
+    color: $color-text-base
+    border-bottom: 1px solid #333333
+    &:hover
+      border-bottom: none
 
+//About
+.tech-about__title
+  margin-bottom: 30px
+.tech-about-wrap
+  +flexbox
+  +flex-wrap(wrap)
+.tech-about-wrap__content
+  +flex(14 1 300px)
+.tech-about-wrap__best
+  margin-left: 30px
+  +flex(1 1 300px)
+.tech-about-content__banner
+  margin-bottom: 30px
+  img
+    width: 100%
+    height: 100%
+    display: block
+.tech-about-content__text
+  font-size: 14px
+  ul
+    margin: 0px 0px 10px 30px
+    list-style-type: disc
+  p
+    margin-bottom: 10px
+.tech-about-content__photo
+  +flexbox
+  +flex-wrap(wrap)
+  +justify-content(space-around)
+  img
+    display: block
+    width: 100%
+    height: 100%
+    max-width: 290px
+.tech-about-best__item
+  margin-bottom: 30px
+  text-align: center
+  font-size: 14px
+  img
+    width: 100%
+    height: 100%
+    display: block
+    margin-bottom: 20px
 //Footer
 .footer
   padding: 40px 0px 60px
